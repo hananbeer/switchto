@@ -97,7 +97,7 @@ if lt.tm_mon == 2 and lt.tm_mday == 28:
 if lt.tm_mon == 2 and lt.tm_mday == 14:
     val()
 
-if lt.tm_hour in (4, 16) and lt_tm_minute == 20:
+if lt.tm_hour in (4, 16) and lt.tm_min == 20:
     blaze_it(lt.tm_hour == 4)
 
 if lt.tm_mday == 6 and lt.tm_mon == 9:
