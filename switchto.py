@@ -5,7 +5,6 @@ import json
 import socket
 import argparse
 import platform
-import switchto_jmode
 
 home_path = os.environ.get('HOME') or os.environ.get('HOMEPATH')
 config_path = os.path.join(home_path, '.s2.json')
@@ -161,8 +160,6 @@ def main():
     # TODO: verbosity is always a good idea
     #parser.add_argument('-v', '-verbose', dest='verbose', action='store_true',
     #                    help='verbose')
-    parser.add_argument('-j', '-J', dest='j', action='store_true',
-                        help='enables J-mode')
     parser.add_argument('-s', '-set', dest='set', nargs='+',
                         help='set domain rule:dest [rule:dest [...]]')
     parser.add_argument('-y', '-yes', dest='yes', action='store_true',
@@ -181,9 +178,6 @@ def main():
 
     if args.to:
         switchto(args.to)
-
-    if args.j:
-        switchto_jmode.jmode()
 
 if __name__ == '__main__':
     main()

@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="switchto", # Replace with your own username
-    version="0.0.1",
+    version="0.0.3",
     author="Hanan Beer",
     author_email="email@hanan.beer",
     license='MIT',
@@ -14,6 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/hananbeer/switchto",
     packages=setuptools.find_packages(),
+    py_modules=['switchto'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
